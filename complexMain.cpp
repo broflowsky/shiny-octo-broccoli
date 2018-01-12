@@ -1,4 +1,3 @@
-//gitHub sucks ass
 #include "Complex.h"
 #include <iostream>
 #include <istream>
