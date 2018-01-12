@@ -1,6 +1,7 @@
 /*
  * did it work????????????????
- * */#include "Complex.h"
+ * */
+#include "Complex.h"
 #include <iostream>
 #include <istream>
 #include <fstream>
@@ -21,16 +22,20 @@ int main(){
 	bool quit = false;
 	/*eraseData(out,outFile);*/
 
-	if(!initStreams(in,out,outFile)){
+	if(initStreams(in,out,outFile)){
 		cerr<<"Stream error";
 		return 1;
 	}
 	while(!quit){
+		cout<<"Enter complex number:\n";
 		string *input = new string;
 		getline(cin,*input);
 		cin.clear();
 		Complex *c = new Complex(*input);
-
+		c->update(VECTOR);
+		c->print(VECTOR);
+		delete input;
+		delete c;
 	}
 	Complex *c = new Complex("0.5 j-0.866");
 	//c->update(CARTESIAN);

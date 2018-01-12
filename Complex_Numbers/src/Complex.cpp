@@ -16,6 +16,12 @@ Complex::Complex(string number)
 	angle= new double;
 	changeNumber(&number);
 }
+Complex::~Complex(){
+	delete rNumber;
+	delete iNumber;
+	delete magnitude;
+	delete angle;
+}
 Complex::Complex(){
 	Complex("1 j1");
 }

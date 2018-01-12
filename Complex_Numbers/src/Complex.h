@@ -11,6 +11,7 @@ class Complex{
 	double *angle;
 
 public:
+	~Complex();
 	Complex(string);
 	Complex();
 	void update(bool);/**/// false vector, true cartesian
