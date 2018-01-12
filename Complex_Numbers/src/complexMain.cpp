@@ -27,7 +27,7 @@ int main(){
 		return 1;
 	}
 	while(!quit){
-		cout<<"Enter complex number:\n";
+		cout<<"\nEnter complex number:\n";
 		string *input = new string;
 		getline(cin,*input);
 		cin.clear();
